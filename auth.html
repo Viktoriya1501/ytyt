@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cats</title>
+    <style>
+        :root {
+            --primary-color: rgb(255, 45, 91);
+            --second-color: rgb(125, 23, 221);
+        }
+        body {
+            background: var(--primary-color);
+        }
+    </style>
+
+
+</head>
+
+<body>
+    
+    <h1  id="your-id-name"> Cats </h1>
+    <form action="" method="get">
+    <label id="your-id-name" for="username">Username:</label>
+    <input type="text" id="username"  placeholder="Логин">
+    <form action="" method="get">
+    <input type="reset" value="Очистить" />
+   </form>
+<br><br>
+<form action="" method="get">
+<label>Password:</label>
+<input type="text" id="password"  placeholder="Пароль">
+<input type="reset" value="Очистить" />
+</form>
+<br><br>
+<input type="button" value="Join" onclick="login()">
+
+    
+<br><br>
+
+
+</body>
+
+<script src="script.js"></script>
+
+<script>
+    alert('Вы уверены что хотите перейти на данный сайт?')
+    function login () {
+        elem = document.getElementById('username');
+        username = elem.value;
+        elem = document.getElementById('password');
+        password = elem.value
+       if ((username =="admin") && (password == "12345"))  {
+        alert("Добро пожаловать!");
+        window.open("Anya.html", "_self");
+       }
+        else if ((username =="user") && (password == "0000"))  {
+        alert("Добро пожаловать!");
+        window.open("Vika.html", "_self");
+        }
+        else {
+
+        alert("Неверный логин или пароль");
+        elem = document.getElementById('username');
+        username = elem.value;
+        elem.style.background = 'red';
+        elem = document.getElementById('password');
+        password = elem.value;
+        elem.style.background = 'red';
+    
+        
+       }
+    }
+   </script>
+<script>
+    function changeTheme(themeName) {
+        var primaryColor;
+        var secondaryColor;
+        if (themeName == 'light') {
+            primaryColor = "Yellow";
+            secondaryColor = "gray";
+        }
+        if (themeName == 'dark') {
+            primaryColor = "#303030";
+            secondaryColow = "#eee";
+        }
+        document.documentElement.style.setProperty("--prymari-color", primaryColor);
+        document.documentElement.style.setProperty("--secondary-color", secondaryColor);
+    }
+</script>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Darknet</title>
+    <style>
+        :root {
+            --primary-color: rgb(247, 250, 103);
+            --second-color: rgb(243, 4, 4);
+        }
+        body {
+            background: var(--primary-color);
+           
+        }
+    </style>
+</head>
+<body>
+  
